@@ -1,11 +1,3 @@
-# Description:
-#   Records messages containing #success or #lessonlearned on a Google form.
-# Commands:
-#   #success - records the entire message as a success story.
-#   #lessonlearned - records the entire message as a lesson learned.
-#   #nowreading - records the entire message as a lesson learned
-
-
 module.exports = (robot) ->
     robot.hear /^#((reading)|(listening)|(location)|(eating)|(working)|(watching)).*/i, (msg) ->
         user = msg.message.user.name
