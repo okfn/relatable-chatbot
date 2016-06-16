@@ -13,7 +13,7 @@ module.exports = (robot) ->
             type: msg.match[1],
             text: msg.message.text,
             username: user,
-        uri = "http://127.0.0.1:8000/api"
+        uri = process.env.API_ENDPOINT
         apikey = process.env.HUBOT_HASHTAG_LISTENER_KEY
         robot.http(uri)
              .header('Authorization', apikey)
