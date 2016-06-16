@@ -24,7 +24,7 @@
     "timezoner": "~0.1.6"
   },
   "engines": {
-    "node": "0.10.x",
-    "npm": "1.1.x"
+    "node": "5.x",
+    "npm": "3.8.x"
   }
 }
